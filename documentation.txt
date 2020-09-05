@@ -1,0 +1,49 @@
+Backend Service -(API) for social-network like platform
+
+Language - Python (version 3.7.6)
+
+Framework - Django (version 3.1.1)
+
+Libraries - Django Rest Framework , Boto
+
+AUTHENTICATION -
+ -- Token Based (Used to avoid session id in URL)
+ -- Register
+ -- Login
+ -- Logout( Destroy Token )
+
+MODELS -
+ -- User Profile
+ -- Item(User Post)
+ -- Asset Bundle (All images and videos possible)
+ -- Asset
+ -- Comment
+ -- Like
+
+AUTH API Views -
+ -- POST /auth/login
+ -- POST /auth/register
+ -- POST /auth/logout
+ -- GET /auth/me
+
+Primary API Views -
+ -- GET /item/(id)
+ -- POST /item
+ -- POST /comment
+ -- POST /like
+
+Asset Bundle -
+ Collection of assets (one-to-many)
+ Same File different versions
+ Asset kinds - original, small, thumb, large
+
+Architecture -
+-- Authentication
+-- Models
+-- API views
+-- Serializers (Representation of json which comes back)
+-- Admin (Master level)
+-- Frontend
+-- Deployment
+
+
